@@ -1,0 +1,179 @@
+@font-face{
+    font-family: "fuente";
+    src: url(./fuentes/Louis\ George\ Cafe.ttf);
+}
+.header{
+    padding: 50px 60px;
+}
+.main{
+    padding: 50px 60px;
+}
+.menu{
+    display: flex;
+}
+.row{
+    font-family: "fuente";
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.row .col{
+    padding: 10px 20px;
+}
+.row .col.l1{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.logo-1{
+    text-align: start;
+}
+.texto-1{
+    text-align: start;
+}
+.logo{
+    text-align: start;
+    padding: 0px 30px;
+    width: 200px;
+}
+.background{
+  
+    background-size: cover;
+}
+.btn{
+    background: linear-gradient(90deg,rgb(158, 107, 241), rgb(224, 115, 232));
+    border-radius: 50px;
+}
+.btn1{
+    background: linear-gradient(90deg,rgb(158, 107, 241), rgb(224, 115, 232));
+    border-radius: 50px;
+}
+.card{
+    border-radius: 15px;
+}
+.card-image {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    padding: 50px 50px 10px;
+}
+.card-content {
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+.card .card-action{
+    background-color: initial;
+    text-transform: none;
+    border-top: 0px;
+    padding: 24px 35px;
+}
+.card .card-action:last-child {
+    border-radius: 0 0 2px 2px;
+    text-align: end;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer{
+    padding: 0px 150px 70px 150px;
+}
+.text{
+    font-family: "fuente";
+    color: rgb(136, 132, 150);
+}
+.input{
+    display: flex;
+    background-color: white;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.col .row {
+    width: 450px;
+    margin-right: none;
+}
+.modal .modal-content {
+    padding: 24px 40px 0 60px;
+    text-align: center;
+    justify-content: center;
+}
+.login{
+    width: 4500px;
+}
+.blue-grey-text.text-lighten-2{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 55px;
+}
+.flow-text{
+    font-size: 40px;
+}
+#email1{
+    width: 700px;
+}
+.material-icons{
+    color: rgb(158, 107, 241);
+}
+
+@media (max-width: 1200px){
+    #email{
+        width: 350px;
+    }
+    #email1 {
+        width: 500px;
+    }
+    .col .row {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1024px){
+    #email1 {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px){
+    .input{
+       margin-bottom: 40px;  
+    }
+    .btn1{
+        margin-left: 300px;
+    }
+    #email{
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px){
+    .menu{
+        display: block;
+    }
+    .btn1 {
+        margin-left: 60px;   
+    }
+    #email{
+        width: 350px;
+    }
+}
+
+@media (max-width: 600px){
+    .btn1 {
+        margin-left: -40px;   
+    }
+    #email{
+        width: 220px;
+    }
+}
+
+@media (max-width: 468px){
+    .input{
+        height: 250px;
+        padding: 50px 30px;
+        display: block;
+        text-align: center;
+    }
+}

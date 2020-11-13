@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>materialize</title>
+    
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="background" background= "./imagenes/fondo-01_Mesa de trabajo 1.jpg">
+    <header class="header">
+        <div class="row logo-1 menu">
+            <div class="col s6 m6 l1">
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                            <img src="./imagenes/Recurso 7.png">
+                        </div>
+                        <a href="#user"><img class="circle" src="./imagenes/Recurso 9.png"></a>
+                        <a href="#name"><span class="white-text name">Sara Suárez</span></a>
+                        <a href="#email"><span class="white-text email">sarasb@gmail.com</span></a>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>Primer elemento</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>Segundo elemento</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>Segundo elemento</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+            <div class="col s6 m6 l6">
+                <img class="logo" src="./imagenes/Recurso 2.png" alt="logo">
+            </div>
+            
+                <div class="col s3 m3 l1 white-text center">Home</div>
+                <div class="col s3 m3 l1 white-text center">Products</div>
+                <div class="col s3 m3 l1 white-text center">Support</div>
+                <div class="col s3 m3 l1 white-text center">About</div>
+               
+            <div class="col s12 m12 l1">
+                <a href="#idModal" class="btn modal-trigger acento morado-3" >login</a>
+                <div id="idModal" class="modal">
+                    <div class="modal-content">
+                        <h3>Login</h3>
+                        <div class="row">
+                            <form class="col s6">
+                                <div class="row login s6">
+                                    <div class="input-field col">
+                                        <input id="email1" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="btn modal-close">Cerrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="row texto-1">
+            <div class="col s12 m12 l6 blue-grey-text text-darken-4 left">
+                <p class="blue-grey-text text-lighten-2">DO YOU EVER WORRY ABOUT</p>
+                <p class="flow-text">We are going to launch things that <strong>helps</strong> to improve...</p>
+                <div class="input s12 z-depth-4"> 
+                    <div class="row">
+                    <form class="col">
+                      <div class="row">
+                        <div class="input-field col email s12">
+                          <input id="email" type="email" class="validate">
+                          <label for="email">Email</label>
+                          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        </div>
+                      </div>
+                    </form>
+                    </div>
+                    <button class="btn1 btn waves-effect waves-light" type="submit" name="action">Notify
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div> 
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                        <img src="./imagenes/Recurso 4.png">
+                    </div>
+                    <div class="card-content blue-grey-text text-darken-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, facilis vero natus iusto maiores tempore sit. Eligendi autem provident esse laboriosam culpa placeat nemo cum non quis.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="blue-grey-text text-darken-4" >details ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card z-depth-4">
+                    <div class="card-image">
+                        <img src="./imagenes/Recurso 8.png">
+                    </div>
+                    <div class="card-content blue-grey-text text-darken-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, facilis vero natus iusto maiores tempore sit. Eligendi autem provident esse laboriosam culpa placeat nemo cum non quis.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="blue-grey-text text-darken-4" >details ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" >
+        <h5 class="text" >2018 sitica made by GraficSpark</h5>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>
